@@ -9,6 +9,7 @@
 # **Documentation and Licence**
 * <a href="#forkingNotes">Important forking notes.</a>
 * <a href="#setup">Installation & Set Up.</a>
+* <a href="#structure">Directory Structure.</a>
 
 
 <h2 id="forkingNotes"><b>🚨 Forking this repo (please read!)</b></h2>
@@ -47,3 +48,19 @@ Finally, you can fork this repo and give me credit [Muhammad Selim](https://www.
    ```bash
    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
    ```
+
+
+<h2 id="structure"><b>Directory Structure</b></h2>
+
+```bash
+Component
+|--- node_modules
+|--- style
+|--- |--- input.css
+|--- |--- output.css
+|--- index.html
+|--- main.js
+|--- package.json
+|--- tailwind.config.js
+|--- README.md
+```
