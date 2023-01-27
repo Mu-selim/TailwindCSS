@@ -1,0 +1,26 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tailwindcss -i ./style/input.css -o ./style/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mu-selim/TailwindCSS.git"
+  },
+  "keywords": [
+    "TailwindCSS"
+  ],
+  "author": "Muhammad Selim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mu-selim/TailwindCSS/issues"
+  },
+  "homepage": "https://github.com/Mu-selim/TailwindCSS#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
