@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar - Tailwind</title>
+    <link rel="shortcut icon" href="tailwindIcon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/output.css">
 </head>
 <body class="bg-sky-500">
-    <nav class="bg-white flex items-center justify-between w-full px-8 py-3 vs:p-1 s:px-2 py-1 ms:px-4 py-2 sm:px-6 py-2">
+    <nav class="fixed w-full bg-white flex justify-between items-center px-10 py-2 vs:px-1 s:px-2 ms:px-3 sm:px-4">
         <div class="flex items-center gap-2">
-            <img class="w-10 h-10" src="tailwindIcon.svg" alt="Logo">
-            <h2 class="text-xl text-sky-500 font-bold font-[Popins]">Tailwind</h2>
+            <img class="w-10 h-10" src="tailwindIcon.svg" alt="tailwind">
+            <h1 class="text-sky-500 font-[Popins] font-extrabold">Tailwind</h1>
         </div>
-        <ul class="flex items-center gap-8 sm:gap-4 md:gap-6">
-            <li class="cursor-pointer font-[Popins] font-medium text-lg sm:text-base duration-300 hover:text-sky-500">Home</li>
-            <li class="cursor-pointer font-[Popins] font-medium text-lg sm:text-base duration-300 hover:text-sky-500">About</li>
-            <li class="cursor-pointer font-[Popins] font-medium text-lg sm:text-base duration-300 hover:text-sky-500">Service</li>
-            <li class="cursor-pointer font-[Popins] font-medium text-lg duration-300 my-1 px-4 py-2 border-2 rounded-md border-sky-500 hover:bg-sky-500 hover:text-white sm:text-base">Get Start</li>
+        <ul class="flex items-center gap-8 sm:gap-4 md:gap-6 ms:fixed right-0 top-[56px] ms:flex-col ms:bg-white ms:h-full ms:w-[50%] s:w-[260px] vs:w-full">
+            <li class="font-[Popins] text-lg md:text-base ms:text-lg duration-300 cursor-pointer hover:text-sky-500 ms:mt-8">Home</li>
+            <li class="font-[Popins] text-lg md:text-base ms:text-lg duration-300 cursor-pointer hover:text-sky-500">About</li>
+            <li class="font-[Popins] text-lg md:text-base ms:text-lg duration-300 cursor-pointer hover:text-sky-500">Service</li>
+            <li class="font-[Popins] text-lg md:text-base ms:text-lg duration-300 cursor-pointer hover:bg-sky-500 hover:text-white border-2 rounded-md border-sky-500 px-2 py-1">Get Started</li>
         </ul>
+        <menu class="hidden flex-col items-end gap-2 cursor-pointer ms:flex">
+            <span class="w-10 h-1 rounded-xl bg-sky-500 duration-300"></span>
+            <span class="w-8 h-1 rounded-xl bg-sky-500 duration-300"></span>
+            <span class="w-6 h-1 rounded-xl bg-sky-500 duration-300"></span>
+        </menu>
     </nav>
 </body>
 </html>
