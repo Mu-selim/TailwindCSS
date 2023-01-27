@@ -1,0 +1,19 @@
+.navList.active {
+    right: 0;
+}
+
+.hamburger.active .line {
+    width: 2.5rem;
+}
+
+.hamburger.active .line1 {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .line2 {
+    display: none;
+}
+
+.hamburger.active .line3 {
+    transform: translateY(-6px) rotate(-45deg);
+}

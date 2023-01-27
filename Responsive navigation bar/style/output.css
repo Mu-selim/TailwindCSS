@@ -517,8 +517,8 @@ video {
   position: fixed;
 }
 
-.right-0 {
-  right: 0px;
+.right-\[-100\%\] {
+  right: -100%;
 }
 
 .top-\[56px\] {
@@ -728,10 +728,6 @@ video {
   .ms\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-
-  .ms\:pt-8 {
-    padding-top: 2rem;
   }
 
   .ms\:text-lg {
