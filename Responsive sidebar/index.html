@@ -1,16 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar - Tailwind</title>
+    <title>Responsive Sidebar - Tailwind</title>
     <link rel="shortcut icon" href="tailwindIcon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/output.css">
     <link rel="stylesheet" href="style/custom.css">
     <script defer src="main.js"></script>
 </head>
 <body class="bg-sky-500">
-    
+    <aside class="relative sidemenu flex flex-col h-screen w-60 p-1 bg-white duration-300">
+        <div class="topBox flex items-center justify-between p-1 my-2">
+            <div class="logo flex items-center gap-1">
+                <img class="tailwindLogo w-8 h-8 cursor-pointer" src="tailwindIcon.svg" alt="Tailwind">
+                <h1 class="tailwindHeeader font-[Poppins] select-none">Tailwind</h1>
+            </div>
+            <menu class="hamburger flex flex-col gap-1.5 cursor-pointer">
+                <span class="line line1 bg-sky-500 w-8 h-1 duration-300 translate-y-[6px] rotate-[45deg] rounded-lg"></span>
+                <span class="line line2 bg-sky-500 w-8 h-1 duration-300 translate-y-[-8px] rotate-[-45deg] rounded-lg"></span>
+            </menu>
+        </div>
+        <div class="relative h-fit mx-1 my-2">
+            <input class="searchInput w-full outline-none py-2 pl-8 pr-2 border-sky-500 border-[1px] rounded-md" type="text" placeholder="Search...">
+            <img class="searchIcon absolute w-8 h-8 cursor-pointer left-0 top-[50%] duration-300 translate-y-[-50%] rounded-md" src="Icons/search.svg" alt="">
+        </div>
+        <ul class="listContainer p-1 my-4">
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/dashboard.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Dashbord</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/user.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">User</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/message.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Message</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/analytic.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Analytics</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/folder.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">File Manager</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/order.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Order</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/saved.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Saved</h2>
+            </li>
+            <li class="listItem flex items-center gap-2 px-1 py-2 rounded-lg cursor-pointer duration-300 hover:bg-slate-300">
+                <img class="w-6 h-6" src="Icons/settings.svg" alt="">
+                <h2 class="listitemItitle font-[Poppins]">Settings</h2>
+            </li>
+        </ul>
+        <div class="userBox absolute bottom-0 left-0 w-full p-2 flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+                <img class="w-10 h-10 rounded-lg" src="Icons/cat.jpeg" alt="Cat">
+                <div class="name flex flex-col">
+                    <h1 class="firstName  text-[12px]">Mia</h1>
+                    <h2 class="secondname text-[12px]">Js.</h2>
+                </div>
+            </div>
+            <img class="logout w-10 h-10 cursor-pointer" src="Icons/logout.svg" alt="logout">
+        </div>
+    </aside>
 </body>
 </html>
